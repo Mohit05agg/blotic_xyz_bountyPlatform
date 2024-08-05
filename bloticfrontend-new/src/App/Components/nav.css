@@ -1,0 +1,14 @@
+header {
+    /* Your navbar styles */
+    background-image: none;
+    --tw-bg-opacity: 0.3;
+    width: 100%;
+        z-index: 50;
+        top: 0px;
+        position: fixed;
+    transition: background-color 0.3s ease-in-out; /* Optional: Add a smooth transition */
+  };
+header.scrolled {
+  /* Styles for the navbar when scrolled */
+  background-color: rgb(163, 25, 25); /* Example: Change the background color to red */
+}

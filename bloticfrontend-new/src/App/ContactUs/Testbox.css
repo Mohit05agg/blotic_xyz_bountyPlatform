@@ -1,0 +1,147 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+/* *, */
+/* *::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+
+/* .body {
+	height: 100%;
+}
+.body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #000;
+	color: #fff;
+	display: grid;
+	place-items: center;
+} */
+/* ======================== */
+.slides {
+	position: relative;
+	width: 310px;
+	height: 400px;
+}
+.slides::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: 15;
+	background-color: rgba(0, 0, 0, 0.25);
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.slides:hover::after {
+	opacity: 1;
+}
+.image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	animation: cycle 1.5s linear infinite 0s forwards;
+	animation-play-state: paused;
+	border-radius: 3%;
+}
+.slides:hover .image {
+	animation-play-state: running;
+}
+.image-1 {
+	z-index: 10;
+}
+.image-2 {
+	z-index: 9;
+	animation-delay: 0.15s;
+}
+.image-3 {
+	z-index: 8;
+	animation-delay: 0.3s;
+}
+.image-4 {
+	z-index: 7;
+	animation-delay: 0.45s;
+}
+.image-5 {
+	z-index: 6;
+	animation-delay: 0.6s;
+}
+.image-6 {
+	z-index: 5;
+	animation-delay: 0.75s;
+}
+.image-7 {
+	z-index: 4;
+	animation-delay: 0.9s;
+}
+.image-8 {
+	z-index: 3;
+	animation-delay: 1.05s;
+}
+.image-9 {
+	z-index: 2;
+	animation-delay: 1.2s;
+}
+.image-10 {
+	z-index: 1;
+	animation-delay: 1.35s;
+}
+@keyframes cycle {
+	from {
+		visibility: visible;
+		z-index: 11;
+	}
+	to {
+		visibility: hidden;
+		z-index: 0;
+	}
+}
+
+@media (min-width: 30em) {
+	.slides {
+		position: relative;
+		width: 680px;
+		height: 350px;
+	}
+  }
+  @media (min-width: 60em) {
+	.slides {
+		position: relative;
+		width: 350px;
+		height: 450px;
+	}
+  }
+
+  /* Problems */
+
+  .about-prob-card{
+    /* -webkit-text-fill-color: inherit;
+    background-color: #0a090d; */
+    background-image: linear-gradient(#141217,#0e0c12);
+    /* background-clip: padding-box;
+    border: 1px solid transparent; */
+    /* border-radius: 12px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    transition: box-shadow .1s ease-in;
+    display: flex;
+	position: relative; */
+}
+
+/* img of solution */
+
+@media (min-width: 900px){
+	.solution-img{
+		position: relative;
+		bottom: 175px;
+	}
+	
+}

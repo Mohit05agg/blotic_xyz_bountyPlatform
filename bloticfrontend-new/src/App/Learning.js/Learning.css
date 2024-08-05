@@ -1,0 +1,344 @@
+body {
+  /* background-color: #06191d; */
+  background-color: #0a090d;
+  /* background-color: rgb(32, 34, 37); */
+  /* background-image: url(../../assets/Bgblo.jpg); */
+  /* background-image: linear-gradient(to right, white , #e4eafc); */
+}
+
+.title {
+  height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/i2-4.jpeg");
+}
+
+.title div {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.title h1 {
+  font-family: "droid-serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.title p {
+  margin-top: 15px;
+  font-size:large;
+}
+
+/* title animation */
+
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+/* card */
+
+.bounty-tilebg{
+  background-color: #0a0a0a;
+}
+
+.band {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 40px;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background-color: #0a0a0a;
+}
+@media (min-width: 30em) {
+  .band {
+    grid-template-columns: 1fr 1fr;
+    
+  }
+}
+@media (min-width: 60em) {
+  .band {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0%;
+  }
+}
+
+.card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+  border-radius: 10px;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.card:hover {
+  top: -2px;
+  cursor: pointer;
+  border-color: #008bf8;
+  /* border: 2px solid #008bf8; */
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card:hover img {
+  transform: scale(1.2, 1.2);
+  transition: transform .5s ease;
+  opacity: 0.8;
+}
+
+.article {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card h1 {
+  font-size: 18px;
+  font-family: sans-serif;
+  margin: 0;
+  color: #333;
+  line-height: normal;
+}
+.card h3 {
+  font-size: 15px;
+  margin-top: 2px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #6c6b6b;
+}
+/* .card p {
+  flex: 1;
+  line-height: 1.4;
+} */
+.card span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #140505;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0.5em 0 0 0;
+}
+
+.card .thumb {
+  /* padding-bottom: 60%; */
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Tittle */
+
+.status{
+  width: 60px;
+  border: 0;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  font-family: sans-serif;
+  padding: 3px 3px;
+  outline: none;
+  color: azure;
+  background: linear-gradient(to right, #1ddc50, #5ce89b );
+  background: linear-gradient(to right, #dc1d1d, #e43018 );
+  border-radius: 5px;
+}
+
+.skill{
+  display: flex;
+  margin-top: 8px;
+}
+
+.skill1{
+  width: 60px;
+  border: 0;
+  /* margin: 5px; */
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  font-family: sans-serif;
+  padding: 3px 3px;
+  outline: none;
+  color: azure;
+  background: linear-gradient(to right, #1C6DD0, #2bc9e9 );
+  border-radius: 5px;
+}
+
+.skill2{
+  width: 60px;
+  border: 0;
+  /* margin: 5px; */
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  font-family: sans-serif;
+  padding: 3px 3px;
+  outline: none;
+  color: azure;
+  background: linear-gradient(to right, #1C6DD0, #2bc9e9 );
+  border-radius: 5px;
+}
+
+
+/* Header */
+.row{
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between; /*the container element distributes the available space evenly between its child elements, but also adds equal space between them. The first child element will align to the start of the container, the last child element will align to the end of the container, and the remaining elements will be evenly spaced between them.*/
+  align-items: center;  
+  padding: 0px 50px;
+  overflow: hidden;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #a4d5fa, #95d8e5 );
+}
+
+.col-1 {
+  /* padding: 10px; */
+  margin-left: 40px;
+  flex-basis: 60%;
+  position: relative;
+}
+
+.col-1 h1{
+font-size: 55px;
+font-weight: 700;
+line-height: normal;
+}
+
+.col-1 h1 span{
+color: rgba(13, 37, 193, 0.825);
+}
+
+.col-1 button{
+width: 140px;
+border: 0;
+font-size: large;
+padding: 12px 15px;
+outline: none;
+color: azure;
+background: linear-gradient(to right, #2d1ddc, #0c17e5 );
+border-radius: 25px;
+cursor: pointer;
+transition: width 0.5s;
+}
+
+.col-1 button:hover{
+width: 160px;
+}
+
+.col-2 {
+  padding: 10px;
+  position: relative;
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+} 
+
+.col-2 img{
+  width: 500px;
+  height: 500px;
+} 
+
+.color-box{
+position: absolute;
+right: 0;
+top: 0;
+background: linear-gradient(#0c17e5, #2d1ddc);
+border-radius: 50px 0 0 50px;
+height: 100%;
+width: 80%;
+z-index: -1;
+transform: translateX(150px);
+}
+
+
+@media only screen and (max-width:700px){
+
+
+.row{
+  flex-direction: column ;
+  margin:  0;
+  line-height: normal;
+}
+
+.col-1{
+  
+  display: block;
+  margin-top: 120px;
+}
+.col-1 h1{
+  font-size: 35px;
+}
+.col-2{
+  flex-basis: 100%;
+  /* margin-bottom: 50px; */
+}
+.color-box{
+  display: none;
+}
+
+}
